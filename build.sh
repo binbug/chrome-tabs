@@ -31,8 +31,7 @@ mkdir "build/dist/$version"
 
 mv "$appName"-darwin "build/dist/$version/"
 
-
-cp chrome-tabs.alfredworkflow "build/dist/$version/chrome-tabs-$version.alfredworkflow"
+cp alfred/chrome-tabs.alfredworkflow "build/dist/$version/chrome-tabs-$version.alfredworkflow"
 
 cd "build/dist/$version/"
 zip "$zipName-$version.zip" *

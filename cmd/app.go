@@ -70,6 +70,7 @@ func (app *application) initBrowser() {
 	bins, _ := l.GetFlags(flags.Bin)
 	log.Println("rod bin is :", bins)
 	wsURL := l.MustLaunch()
+	log.Println("wsURL:", wsURL)
 	app.browser = rod.New().ControlURL(wsURL).MustConnect().NoDefaultDevice()
 }
 
